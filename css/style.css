@@ -26,7 +26,7 @@ li, button {
 
 :root {
   --black: #343434;
-  --Accent: #005BC1;
+  --accent: #005BC1;
   --white: #FFFFFF;
 }
 
@@ -133,6 +133,121 @@ li, button {
   position: relative;
   background-color: white;
   z-index: 2;
+}
+.container .project .project__container {
+  padding-top: 156px;
   max-width: 100%;
-  height: 300px;
+}
+.container .project .project__container .project__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .project .project__container .project__section .project__section-image {
+  width: 100px;
+  height: 13px;
+}
+.container .project .project__container .project__section .project__title {
+  margin-left: 40px;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--black, #343434);
+}
+.container .project .project__container .project__section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 70px;
+}
+.container .project .project__container .project__section-container .project__section-box1 {
+  background-image: url(../img/project1.png);
+}
+.container .project .project__container .project__section-container .project__section-box2 {
+  background-image: url(../img/project2.png);
+}
+.container .project .project__container .project__section-container .project__section-box1, .container .project .project__container .project__section-container .project__section-box2 {
+  background-size: cover;
+  width: calc(50% - 15px);
+  padding: 35px;
+}
+.container .project .project__container .project__section-container .project__section-box1 .project__text-container, .container .project .project__container .project__section-container .project__section-box2 .project__text-container {
+  background: #FFF;
+  position: relative;
+  z-index: 3;
+  margin-top: 220px;
+  margin-left: 220px;
+  padding: 20px 25px;
+}
+.container .project .project__container .project__section-container .project__section-box1 .project__text-container .project__text-title, .container .project .project__container .project__section-container .project__section-box2 .project__text-container .project__text-title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  color: var(--black, #343434);
+}
+.container .project .project__container .project__section-container .project__section-box1 .project__text-container .project__text-subtitle, .container .project .project__container .project__section-container .project__section-box2 .project__text-container .project__text-subtitle {
+  margin-top: 14px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: var(--black, #343434);
+}
+.container .project .project__grid-container {
+  margin-top: 55px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+.container .project .project__grid-container .first__grid-item {
+  background-image: url(../img/rectangle4.png);
+}
+.container .project .project__grid-container .second__grid-item {
+  background-image: url(../img/rectangle5.png);
+}
+.container .project .project__grid-container .third__grid-item {
+  background-image: url(../img/rectangle6.png);
+}
+.container .project .project__grid-container .project__grid-item {
+  border: 3px solid var(--accent, #005BC1);
+  background-repeat: no-repeat;
+  padding-bottom: 15px;
+}
+.container .project .project__grid-container .project__grid-item .project__grid-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 21px;
+  background: var(--accent, #005BC1);
+  margin-top: 199px;
+  margin-left: 85px;
+  height: 86px;
+}
+.container .project .project__grid-container .project__grid-item .project__grid-text .project__grid-title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  color: var(--white, #FFF);
 }
