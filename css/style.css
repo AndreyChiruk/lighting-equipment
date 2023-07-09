@@ -251,3 +251,98 @@ li, button {
   text-transform: uppercase;
   color: var(--white, #FFF);
 }
+.container .project .project__rent {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 100%;
+}
+.container .project .project__rent .project__rent-text {
+  max-width: 350px;
+}
+.container .project .project__rent .project__rent-text .project__rent-subtitle {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.container .project .project__rent .project__rent-container {
+  border: 3px solid var(--accent, #005BC1);
+  padding: 30px;
+}
+.container .project .project__rent .project__rent-container .project__rent-title-block {
+  margin-top: 12px;
+}
+.container .project .project__rent .project__rent-container .project__rent-title-block .project__rent-title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+.container .project .project__rent .project__rent-container .project__rent-content {
+  margin-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.container .project .project__rent .project__rent-container .project__rent-content .project__rent-content-text {
+  margin-left: 30px;
+}
+.container .project .project__rent .project__rent-container .project__rent-content .project__rent-content-text .project__rent-content-title {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--black, #343434);
+}
+.container .project .project__rent .project__rent-container .project__rent-content .project__rent-content-text .project__rent-list {
+  margin-top: 30px;
+}
+.container .project .project__rent .project__rent-container .project__rent-content .project__rent-content-text .project__rent-item:not(:first-child) {
+  margin-top: 30px;
+}
+.container .project .project__rent .project__rent-container .project__rent-content .project__rent-content-text .project__rent-item {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: var(--black, #343434);
+}
+.container .project .project__rent .project__rent-container .project__rent-content .project__rent-image {
+  max-width: 255px;
+  max-height: 250px;
+}
+.container .project .news__container {
+  margin-top: 77px;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.container .project .news__container .news__semenar .news__semenar-title-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .project .news__container .news__semenar .news__semenar-title-block .news__semenar-title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
