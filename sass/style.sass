@@ -239,9 +239,11 @@ li, button
 			.news__container-image
 				.news__container-img
 			.news__semenar
+				margin-left: 30px
 				.news__semenar-title-block
 					display: flex
 					align-items: center
+					justify-content: space-between
 					.news__semenar-title
 						font-size: 18px
 						font-style: normal
@@ -249,3 +251,102 @@ li, button
 						line-height: normal
 						letter-spacing: 0.9px
 						text-transform: uppercase
+					.news__semenar-data
+						font-size: 14px
+						font-style: normal
+						font-weight: 600
+						line-height: normal
+						color: #979797
+				.news__semenar-subtitle
+					margin-top: 42px
+					max-width: 255px
+					font-size: 14px
+					font-style: normal
+					font-weight: 300
+					line-height: normal
+					color: var(--black, #343434)
+			.news__semenarMin
+				margin-left: 57px
+				.news__semenarMin-title
+					max-width: 225px
+					color: var(--black, #343434)
+					font-size: 18px
+					font-style: normal
+					font-weight: 400
+					line-height: normal
+					letter-spacing: 0.9px
+					text-transform: uppercase
+				.news__semenarMin-subtitle
+					margin-top: 20px
+					max-width: 225px
+					color: var(--black, #343434)
+					font-size: 14px
+					font-style: normal
+					font-weight: 300
+					line-height: normal 
+				.news__semenarMin-image-box
+					margin-top: 20px
+					display: flex
+					align-items: flex-end
+					justify-content: space-between
+					.news__semenarMin-image
+					.news__semenarMin-data
+	.footer
+		max-width: 100%
+		margin-top: 120px
+		background: var(--accent, #005BC1)
+		.footer__content
+			.footer__contacts
+				padding-top: 40px
+				display: flex
+				align-items: center
+				.footer__contacts-text:nth-child(1)
+					width: 123px !important
+					font-size: 18px
+				.footer__contacts-text:nth-child(2)
+					text-align: center
+					width: calc(100% - 258px)
+					font-size: 14px
+				.footer__contacts-text:nth-child(3)
+					width: 135px
+					font-size: 14px
+				.footer__contacts-text
+					color: var(--white, #FFF)
+					font-family: 'Oswald', sans-serif
+					font-style: normal
+					font-weight: 400
+					line-height: normal
+					letter-spacing: 0.9px
+					text-transform: uppercase
+		.footer__line
+			margin-top: 29px
+			background: #FFF
+			height: 1px
+		.footer__menu
+			margin-top: 25px
+			display: flex
+			.footer__menu-block:not(:first-child)
+				margin-left: 110px
+			.footer__menu-block
+				.footer__menu-text:not(:first-child)
+					margin-top: 10px
+				.footer__menu-text
+					color: var(--white, #FFF)
+					font-family: 'Open Sans', sans-serif
+					font-size: 14px
+					font-style: normal
+					font-weight: 300
+					line-height: normal 
+		.footer__prava
+			margin-top: 25px
+			padding-bottom: 25px
+			display: flex
+			align-items: center
+			justify-content: space-between
+			.footer__prava-text
+				color: var(--white, #FFF)
+				font-family: 'Open Sans', sans-serif
+				font-size: 14px
+				font-style: normal
+				font-weight: 300
+				line-height: normal

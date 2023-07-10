@@ -330,6 +330,9 @@ li, button {
   display: -ms-flexbox;
   display: flex;
 }
+.container .project .news__container .news__semenar {
+  margin-left: 30px;
+}
 .container .project .news__container .news__semenar .news__semenar-title-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -337,6 +340,9 @@ li, button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .container .project .news__container .news__semenar .news__semenar-title-block .news__semenar-title {
   font-size: 18px;
@@ -345,4 +351,136 @@ li, button {
   line-height: normal;
   letter-spacing: 0.9px;
   text-transform: uppercase;
+}
+.container .project .news__container .news__semenar .news__semenar-title-block .news__semenar-data {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #979797;
+}
+.container .project .news__container .news__semenar .news__semenar-subtitle {
+  margin-top: 42px;
+  max-width: 255px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: var(--black, #343434);
+}
+.container .project .news__container .news__semenarMin {
+  margin-left: 57px;
+}
+.container .project .news__container .news__semenarMin .news__semenarMin-title {
+  max-width: 225px;
+  color: var(--black, #343434);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+.container .project .news__container .news__semenarMin .news__semenarMin-subtitle {
+  margin-top: 20px;
+  max-width: 225px;
+  color: var(--black, #343434);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.container .project .news__container .news__semenarMin .news__semenarMin-image-box {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.container .footer {
+  max-width: 100%;
+  margin-top: 120px;
+  background: var(--accent, #005BC1);
+}
+.container .footer .footer__content .footer__contacts {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .footer .footer__content .footer__contacts .footer__contacts-text:nth-child(1) {
+  width: 123px !important;
+  font-size: 18px;
+}
+.container .footer .footer__content .footer__contacts .footer__contacts-text:nth-child(2) {
+  text-align: center;
+  width: calc(100% - 258px);
+  font-size: 14px;
+}
+.container .footer .footer__content .footer__contacts .footer__contacts-text:nth-child(3) {
+  width: 135px;
+  font-size: 14px;
+}
+.container .footer .footer__content .footer__contacts .footer__contacts-text {
+  color: var(--white, #FFF);
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+.container .footer .footer__line {
+  margin-top: 29px;
+  background: #FFF;
+  height: 1px;
+}
+.container .footer .footer__menu {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.container .footer .footer__menu .footer__menu-block:not(:first-child) {
+  margin-left: 110px;
+}
+.container .footer .footer__menu .footer__menu-block .footer__menu-text:not(:first-child) {
+  margin-top: 10px;
+}
+.container .footer .footer__menu .footer__menu-block .footer__menu-text {
+  color: var(--white, #FFF);
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.container .footer .footer__prava {
+  margin-top: 25px;
+  padding-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.container .footer .footer__prava .footer__prava-text {
+  color: var(--white, #FFF);
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
