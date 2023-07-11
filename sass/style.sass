@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald&display=swap')
-
 *
 	margin: 0
 	padding: 0
 	border: 0
 	box-sizing: border-box
+.opacity
+	opacity: 0
+.active
+	display: flex !important
+.noactive
+	display: none !important
 .block
 	margin: 0 auto
 	max-width: 1100px
@@ -30,6 +35,73 @@ li, button
 			left: 40px
 			width: 140px
 			height: 58px
+		.menu-btn
+			display: none
+			flex-direction: column
+			position: fixed
+			right: 20px
+			top: 20px
+			width: 30px
+			height: 30px
+			z-index:4
+			.menu-span
+				border-radius: 3px
+				margin-top: 5px
+				width: 30px
+				height: 3px
+				background-color: #fff
+			.menu-span:first-child
+				margin-top: 0
+		.menu
+			position: fixed
+			cursor: pointer
+			display: none
+			justify-content: center
+			z-index: 4
+			position: fixed
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(34, 34, 34, 0.8)
+			.menu__list
+				margin-top: 20vh
+				list-style-type: none
+				.menu__item:not(:first-child)
+					margin-top: 20px
+				.menu__item
+					font-family: 'Open Sans', sans-serif
+					font-size: 24px
+					font-style: normal
+					font-weight: 600
+					line-height: normal
+					color: var(--white, #FFF)
+		.hide
+			display: none
+			z-index: 5
+			position: fixed
+			top: 20px
+			right: 20px
+			width: 32px
+			height: 32px
+			opacity: 0.2
+			cursor: pointer
+			transition: opacity ease 0.5s
+			&:hover
+				opacity: 1
+		.hide::before,
+		.hide::after 
+			content: ''
+			position: absolute
+			top: 10px
+			display: block
+			width: 24px
+			height: 3px
+			background: white
+		.hide::before 
+			transform: rotate(45deg)
+		.hide::after 
+			transform: rotate(-45deg)
 		.header
 			max-width: 100%
 			display: flex
@@ -236,61 +308,63 @@ li, button
 			margin-top: 77px
 			max-width: 100%
 			display: flex
-			.news__container-image
-				.news__container-img
-			.news__semenar
-				margin-left: 30px
-				.news__semenar-title-block
-					display: flex
-					align-items: center
-					justify-content: space-between
-					.news__semenar-title
+			.news__container-block
+				display: flex
+				.news__container-image
+					.news__container-img
+				.news__semenar
+					margin-left: 30px
+					.news__semenar-title-block
+						display: flex
+						align-items: center
+						justify-content: space-between
+						.news__semenar-title
+							font-size: 18px
+							font-style: normal
+							font-weight: 400
+							line-height: normal
+							letter-spacing: 0.9px
+							text-transform: uppercase
+						.news__semenar-data
+							font-size: 14px
+							font-style: normal
+							font-weight: 600
+							line-height: normal
+							color: #979797
+					.news__semenar-subtitle
+						margin-top: 42px
+						max-width: 255px
+						font-size: 14px
+						font-style: normal
+						font-weight: 300
+						line-height: normal
+						color: var(--black, #343434)
+				.news__semenarMin
+					margin-left: 57px
+					.news__semenarMin-title
+						max-width: 225px
+						color: var(--black, #343434)
 						font-size: 18px
 						font-style: normal
 						font-weight: 400
 						line-height: normal
 						letter-spacing: 0.9px
 						text-transform: uppercase
-					.news__semenar-data
+					.news__semenarMin-subtitle
+						margin-top: 20px
+						max-width: 225px
+						color: var(--black, #343434)
 						font-size: 14px
 						font-style: normal
-						font-weight: 600
-						line-height: normal
-						color: #979797
-				.news__semenar-subtitle
-					margin-top: 42px
-					max-width: 255px
-					font-size: 14px
-					font-style: normal
-					font-weight: 300
-					line-height: normal
-					color: var(--black, #343434)
-			.news__semenarMin
-				margin-left: 57px
-				.news__semenarMin-title
-					max-width: 225px
-					color: var(--black, #343434)
-					font-size: 18px
-					font-style: normal
-					font-weight: 400
-					line-height: normal
-					letter-spacing: 0.9px
-					text-transform: uppercase
-				.news__semenarMin-subtitle
-					margin-top: 20px
-					max-width: 225px
-					color: var(--black, #343434)
-					font-size: 14px
-					font-style: normal
-					font-weight: 300
-					line-height: normal 
-				.news__semenarMin-image-box
-					margin-top: 20px
-					display: flex
-					align-items: flex-end
-					justify-content: space-between
-					.news__semenarMin-image
-					.news__semenarMin-data
+						font-weight: 300
+						line-height: normal 
+					.news__semenarMin-image-box
+						margin-top: 20px
+						display: flex
+						align-items: flex-end
+						justify-content: space-between
+						.news__semenarMin-image
+						.news__semenarMin-data
 	.footer
 		max-width: 100%
 		margin-top: 120px
